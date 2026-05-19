@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8afc8a98498947d1907393b3bc337e1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8afc8a98498947d1907393b3bc337e1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8afc8a98498947d1907393b3bc337e1c = L.map(
+                "map_8afc8a98498947d1907393b3bc337e1c",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7ae8d0c2b122d0a9de5af03e61343c86 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7ae8d0c2b122d0a9de5af03e61343c86.addTo(map_8afc8a98498947d1907393b3bc337e1c);
+        
+    
+            var marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_54b613f6efb14e23d5d4795d677abb31 = L.marker(
+                [37.5382585, 126.9558355],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_25fbb4355657b1430facf485ef53607c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efd5fce81d4e04d9695615fd24c2c566 = $(`<div id="html_efd5fce81d4e04d9695615fd24c2c566" style="width: 100.0%; height: 100.0%;"><b>코딩영재컴퓨터학원</b><br>서울특별시 용산구 새창로 70</div>`)[0];
+                popup_25fbb4355657b1430facf485ef53607c.setContent(html_efd5fce81d4e04d9695615fd24c2c566);
+            
+        
+
+        marker_54b613f6efb14e23d5d4795d677abb31.bindPopup(popup_25fbb4355657b1430facf485ef53607c)
+        ;
+
+        
+    
+    
+            marker_54b613f6efb14e23d5d4795d677abb31.bindTooltip(
+                `<div>
+                     코딩영재컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e1074738ecbf6771188f991bbf32be8b = L.marker(
+                [37.532836, 126.9953127],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_e663b501702be778a5c84bea59835876 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57d637b0abb10b1d5075e6d6fe3938dd = $(`<div id="html_57d637b0abb10b1d5075e6d6fe3938dd" style="width: 100.0%; height: 100.0%;"><b>화인컴퓨터학원</b><br>서울특별시 용산구 우사단로 2-1</div>`)[0];
+                popup_e663b501702be778a5c84bea59835876.setContent(html_57d637b0abb10b1d5075e6d6fe3938dd);
+            
+        
+
+        marker_e1074738ecbf6771188f991bbf32be8b.bindPopup(popup_e663b501702be778a5c84bea59835876)
+        ;
+
+        
+    
+    
+            marker_e1074738ecbf6771188f991bbf32be8b.bindTooltip(
+                `<div>
+                     화인컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec22e437ebc95214d623e5373e74e899 = L.marker(
+                [37.619482, 126.9156618],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_704de1834b6f421c40abb51ea93f2fb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e31c2796dcc75ec06abc8997b6f060b2 = $(`<div id="html_e31c2796dcc75ec06abc8997b6f060b2" style="width: 100.0%; height: 100.0%;"><b>리틀컴퓨터교습소</b><br>서울특별시 은평구 갈현로 241</div>`)[0];
+                popup_704de1834b6f421c40abb51ea93f2fb0.setContent(html_e31c2796dcc75ec06abc8997b6f060b2);
+            
+        
+
+        marker_ec22e437ebc95214d623e5373e74e899.bindPopup(popup_704de1834b6f421c40abb51ea93f2fb0)
+        ;
+
+        
+    
+    
+            marker_ec22e437ebc95214d623e5373e74e899.bindTooltip(
+                `<div>
+                     리틀컴퓨터교습소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_15dc2951881b8f8949e1ccdac22db266 = L.marker(
+                [37.5998958, 126.9159122],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_9f0cd4d8135d0507c50d43c695eed293 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f086c4c7629ae63047fcac503233794d = $(`<div id="html_f086c4c7629ae63047fcac503233794d" style="width: 100.0%; height: 100.0%;"><b>써니코딩컴퓨터교습소</b><br>서울특별시 은평구 연서로 158</div>`)[0];
+                popup_9f0cd4d8135d0507c50d43c695eed293.setContent(html_f086c4c7629ae63047fcac503233794d);
+            
+        
+
+        marker_15dc2951881b8f8949e1ccdac22db266.bindPopup(popup_9f0cd4d8135d0507c50d43c695eed293)
+        ;
+
+        
+    
+    
+            marker_15dc2951881b8f8949e1ccdac22db266.bindTooltip(
+                `<div>
+                     써니코딩컴퓨터교습소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8896cc4c32d66f4ecb906c5b98e9bd32 = L.marker(
+                [37.5935125, 126.9205823],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_06acb405de166d0609f82a927b63bbbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a32b28bfb8d1a37ce396072e1a63071a = $(`<div id="html_a32b28bfb8d1a37ce396072e1a63071a" style="width: 100.0%; height: 100.0%;"><b>이지코딩컴퓨터교습소</b><br>서울특별시 은평구 응암로22길 37</div>`)[0];
+                popup_06acb405de166d0609f82a927b63bbbe.setContent(html_a32b28bfb8d1a37ce396072e1a63071a);
+            
+        
+
+        marker_8896cc4c32d66f4ecb906c5b98e9bd32.bindPopup(popup_06acb405de166d0609f82a927b63bbbe)
+        ;
+
+        
+    
+    
+            marker_8896cc4c32d66f4ecb906c5b98e9bd32.bindTooltip(
+                `<div>
+                     이지코딩컴퓨터교습소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ddf23027cd0a1770525edcdc08447c93 = L.marker(
+                [37.6127511, 126.9172249],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_827d8bf5ca251f87adfc31092834b517 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ce3ab5b6dd7ed50b18eba4abd249651 = $(`<div id="html_7ce3ab5b6dd7ed50b18eba4abd249651" style="width: 100.0%; height: 100.0%;"><b>대영컴퓨터학원</b><br>서울특별시 은평구 연서로 155</div>`)[0];
+                popup_827d8bf5ca251f87adfc31092834b517.setContent(html_7ce3ab5b6dd7ed50b18eba4abd249651);
+            
+        
+
+        marker_ddf23027cd0a1770525edcdc08447c93.bindPopup(popup_827d8bf5ca251f87adfc31092834b517)
+        ;
+
+        
+    
+    
+            marker_ddf23027cd0a1770525edcdc08447c93.bindTooltip(
+                `<div>
+                     대영컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fe02c6cd3ed5ec43cd9d8c9189e060b7 = L.marker(
+                [37.6106297, 126.9167458],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_78be91372d9a9c70765512d61d4eb734 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a93ec9703e732daf1dcccf8dadd1d690 = $(`<div id="html_a93ec9703e732daf1dcccf8dadd1d690" style="width: 100.0%; height: 100.0%;"><b>은평컴퓨터아트학원</b><br>서울특별시 은평구 연서로 131</div>`)[0];
+                popup_78be91372d9a9c70765512d61d4eb734.setContent(html_a93ec9703e732daf1dcccf8dadd1d690);
+            
+        
+
+        marker_fe02c6cd3ed5ec43cd9d8c9189e060b7.bindPopup(popup_78be91372d9a9c70765512d61d4eb734)
+        ;
+
+        
+    
+    
+            marker_fe02c6cd3ed5ec43cd9d8c9189e060b7.bindTooltip(
+                `<div>
+                     은평컴퓨터아트학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23b1e1778ffb1ef05bb2ddec6527cd0f = L.marker(
+                [37.6081444, 126.9219048],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_a08262495955dce29d94416249481eef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaa7394347ddd30f0e611fa51a4c590e = $(`<div id="html_aaa7394347ddd30f0e611fa51a4c590e" style="width: 100.0%; height: 100.0%;"><b>이샘컴퓨터학원</b><br>서울특별시 은평구 서오릉로 192</div>`)[0];
+                popup_a08262495955dce29d94416249481eef.setContent(html_aaa7394347ddd30f0e611fa51a4c590e);
+            
+        
+
+        marker_23b1e1778ffb1ef05bb2ddec6527cd0f.bindPopup(popup_a08262495955dce29d94416249481eef)
+        ;
+
+        
+    
+    
+            marker_23b1e1778ffb1ef05bb2ddec6527cd0f.bindTooltip(
+                `<div>
+                     이샘컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_480466e8a59562e335eb1e33a0845e5c = L.marker(
+                [37.6172373, 126.9183478],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_3212cade3df3a59f3c06fbe610875691 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adffbde341a83556a4e4545fb64288f6 = $(`<div id="html_adffbde341a83556a4e4545fb64288f6" style="width: 100.0%; height: 100.0%;"><b>제이에이컴퓨터학원</b><br>서울특별시 은평구 연서로25길 20-5</div>`)[0];
+                popup_3212cade3df3a59f3c06fbe610875691.setContent(html_adffbde341a83556a4e4545fb64288f6);
+            
+        
+
+        marker_480466e8a59562e335eb1e33a0845e5c.bindPopup(popup_3212cade3df3a59f3c06fbe610875691)
+        ;
+
+        
+    
+    
+            marker_480466e8a59562e335eb1e33a0845e5c.bindTooltip(
+                `<div>
+                     제이에이컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30ea3292d4ddeb52addb012511edcd81 = L.marker(
+                [37.618972, 126.9227982],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_21a2d8a32f3827c8dba9455aeb550957 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_467debf7486ccd02dcf4bbe1fede9beb = $(`<div id="html_467debf7486ccd02dcf4bbe1fede9beb" style="width: 100.0%; height: 100.0%;"><b>제이컴퓨터학원</b><br>서울특별시 은평구 연서로 35</div>`)[0];
+                popup_21a2d8a32f3827c8dba9455aeb550957.setContent(html_467debf7486ccd02dcf4bbe1fede9beb);
+            
+        
+
+        marker_30ea3292d4ddeb52addb012511edcd81.bindPopup(popup_21a2d8a32f3827c8dba9455aeb550957)
+        ;
+
+        
+    
+    
+            marker_30ea3292d4ddeb52addb012511edcd81.bindTooltip(
+                `<div>
+                     제이컴퓨터학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da7a407d538380527514a673f602cb3e = L.marker(
+                [37.6009802, 126.9247573],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_ec02be3a486ae086bfc6562db6181f75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75cffeb07b0b244d4ae5c9c29c1d272e = $(`<div id="html_75cffeb07b0b244d4ae5c9c29c1d272e" style="width: 100.0%; height: 100.0%;"><b>코딩하는아이들학원</b><br>서울특별시 은평구 은평로 200</div>`)[0];
+                popup_ec02be3a486ae086bfc6562db6181f75.setContent(html_75cffeb07b0b244d4ae5c9c29c1d272e);
+            
+        
+
+        marker_da7a407d538380527514a673f602cb3e.bindPopup(popup_ec02be3a486ae086bfc6562db6181f75)
+        ;
+
+        
+    
+    
+            marker_da7a407d538380527514a673f602cb3e.bindTooltip(
+                `<div>
+                     코딩하는아이들학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_828e149fb4e5dd3a88513bd7aa702475 = L.marker(
+                [37.5697586, 126.9896402],
+                {
+}
+            ).addTo(marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc);
+        
+    
+        var popup_ab3b5c35e0de242e402ad4fab9b81d5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ea7e68906f0e71fefbbe7ad24104c48 = $(`<div id="html_6ea7e68906f0e71fefbbe7ad24104c48" style="width: 100.0%; height: 100.0%;"><b>그린컴퓨터아트학원</b><br>서울특별시 종로구 수표로 96</div>`)[0];
+                popup_ab3b5c35e0de242e402ad4fab9b81d5c.setContent(html_6ea7e68906f0e71fefbbe7ad24104c48);
+            
+        
+
+        marker_828e149fb4e5dd3a88513bd7aa702475.bindPopup(popup_ab3b5c35e0de242e402ad4fab9b81d5c)
+        ;
+
+        
+    
+    
+            marker_828e149fb4e5dd3a88513bd7aa702475.bindTooltip(
+                `<div>
+                     그린컴퓨터아트학원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_2627f646e2ca87727b92ac6ed1cd35cc.addTo(map_8afc8a98498947d1907393b3bc337e1c);
+        
+</script>
+</html>
